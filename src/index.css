@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+   THEME VARIABLES
+   ===================== */
+
+/* LIGHT (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #1f2937;
+}
+
+/* DARK */
+html.dark {
+  --bg-color: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+}
+
+/* =====================
+   GLOBAL BASE
+   ===================== */
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
